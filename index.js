@@ -10,7 +10,6 @@ import dotenv from 'dotenv';
 dotenv.config({ path: path.resolve(__dirname, '.env') });
 import cloud from './cloud/main.js';
 
-console.log(__dirname);
 export const config = {
   databaseURI:
     process.env.DB_URI || process.env.MONGODB_URI || 'mongodb://localhost:27017/dev',
